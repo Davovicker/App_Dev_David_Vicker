@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab_1_Buttons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan Your trip!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUA-MZ-84f">
+                                <rect key="frame" x="43" y="133" width="328" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="i53-94-yMb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCw-pU-TM4">
+                                <rect key="frame" x="20" y="772" width="88" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="6kC-Rt-hdd"/>
+                                    <constraint firstAttribute="width" constant="88" id="gAH-Jx-L6f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <size key="titleShadowOffset" width="2" height="0.0"/>
+                                <state key="normal" title="Family Float" backgroundImage="Fam_Float">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                    <color key="titleShadowColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="Backward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0cT-hc-lhs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxO-DE-o8E">
+                                <rect key="frame" x="163" y="772" width="88" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <size key="titleShadowOffset" width="2" height="0.0"/>
+                                <state key="normal" title="Big Horn" backgroundImage="Big_Horn">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                    <color key="titleShadowColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="Big_Horn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R3L-SP-K4N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iC-br-Glf">
+                                <rect key="frame" x="306" y="775" width="88" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="2yq-pb-G8p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <size key="titleShadowOffset" width="2" height="0.0"/>
+                                <state key="normal" title="Royal Gorge" backgroundImage="Royal_Gorge">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                    <color key="titleShadowColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="Forward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yn8-a6-8Ks"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Royal_Gorge" translatesAutoresizingMaskIntoConstraints="NO" id="iAc-qC-DFM">
+                                <rect key="frame" x="47" y="210" width="324" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="235" id="eXC-B3-szq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6U7-i9-rdj">
+                                <rect key="frame" x="353" y="44" width="41" height="30"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="Home:" destination="BYZ-38-t0r" eventType="touchUpInside" id="scr-68-CJ8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6U7-i9-rdj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6Sa-1l-9Sb"/>
+                            <constraint firstItem="eUA-MZ-84f" firstAttribute="top" secondItem="6U7-i9-rdj" secondAttribute="bottom" constant="59" id="B8E-UL-l28"/>
+                            <constraint firstItem="6U7-i9-rdj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="EKS-8O-By7"/>
+                            <constraint firstItem="NxO-DE-o8E" firstAttribute="baseline" secondItem="wCw-pU-TM4" secondAttribute="firstBaseline" id="PM8-th-l3q"/>
+                            <constraint firstItem="eUA-MZ-84f" firstAttribute="centerX" secondItem="NxO-DE-o8E" secondAttribute="centerX" id="Sdt-4N-dJU"/>
+                            <constraint firstItem="wCw-pU-TM4" firstAttribute="top" secondItem="NxO-DE-o8E" secondAttribute="top" id="SxV-Wg-Wo8"/>
+                            <constraint firstItem="wCw-pU-TM4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="URB-L3-y9W"/>
+                            <constraint firstItem="eUA-MZ-84f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="YqA-qr-LCZ"/>
+                            <constraint firstItem="6U7-i9-rdj" firstAttribute="trailing" secondItem="5iC-br-Glf" secondAttribute="trailing" id="bvP-uW-7G7"/>
+                            <constraint firstItem="NxO-DE-o8E" firstAttribute="bottom" secondItem="5iC-br-Glf" secondAttribute="bottom" id="gzI-U1-pQG"/>
+                            <constraint firstItem="eUA-MZ-84f" firstAttribute="trailing" secondItem="iAc-qC-DFM" secondAttribute="trailing" id="iMC-9j-2jG"/>
+                            <constraint firstItem="wCw-pU-TM4" firstAttribute="baseline" secondItem="NxO-DE-o8E" secondAttribute="firstBaseline" id="j66-21-xOW"/>
+                            <constraint firstItem="iAc-qC-DFM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="mdw-mS-YrQ"/>
+                            <constraint firstItem="NxO-DE-o8E" firstAttribute="leading" secondItem="wCw-pU-TM4" secondAttribute="trailing" constant="55" id="n7J-7N-SmZ"/>
+                            <constraint firstItem="wCw-pU-TM4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nCG-Wg-VkK"/>
+                            <constraint firstItem="5iC-br-Glf" firstAttribute="leading" secondItem="NxO-DE-o8E" secondAttribute="trailing" constant="55" id="p8X-EO-d1b"/>
+                            <constraint firstItem="iAc-qC-DFM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="210" id="ukA-bZ-m6x"/>
+                            <constraint firstItem="eUA-MZ-84f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w3Z-yz-4EP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Tittle" destination="eUA-MZ-84f" id="hKX-DY-mV3"/>
+                        <outlet property="artImage" destination="iAc-qC-DFM" id="k0K-Wg-JZA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Big_Horn" width="470" height="322"/>
+        <image name="Fam_Float" width="466" height="336"/>
+        <image name="Royal_Gorge" width="470" height="336"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
