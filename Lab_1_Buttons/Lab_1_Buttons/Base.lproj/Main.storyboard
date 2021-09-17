@@ -84,6 +84,78 @@
                                     <action selector="Home:" destination="BYZ-38-t0r" eventType="touchUpInside" id="scr-68-CJ8"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="c3T-i5-rke">
+                                <rect key="frame" x="22" y="495" width="375" height="157"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="79" translatesAutoresizingMaskIntoConstraints="NO" id="JwJ-Ry-52B">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you Excited?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqR-Ak-awg">
+                                                <rect key="frame" x="0.0" y="0.0" width="126.5" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dx6-XX-nNe">
+                                                <rect key="frame" x="205.5" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="updateResponse:" destination="BYZ-38-t0r" eventType="valueChanged" id="tOi-dl-0ae"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvw-8I-6bh">
+                                                <rect key="frame" x="333.5" y="0.0" width="41.5" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="9Gv-Yw-M0q">
+                                        <rect key="frame" x="0.0" y="57" width="375" height="100"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kvr-Lv-vt5">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="31"/>
+                                                <subviews>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="c4D-Lc-w95">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+                                                        <segments>
+                                                            <segment title="Family Float"/>
+                                                            <segment title="Big Horn"/>
+                                                            <segment title="Royal Gorge"/>
+                                                            <segment title="Plan"/>
+                                                        </segments>
+                                                        <connections>
+                                                            <action selector="changeInfo:" destination="BYZ-38-t0r" eventType="valueChanged" id="iLl-sL-sh0"/>
+                                                            <action selector="imageControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="StP-lS-qOK"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="ims-fT-3eZ">
+                                                <rect key="frame" x="38.5" y="71" width="298" height="29"/>
+                                                <subviews>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="CLM-8G-44y">
+                                                        <rect key="frame" x="-2" y="0.0" width="118" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="29" id="Ske-gK-H0Q"/>
+                                                            <constraint firstAttribute="width" constant="114" id="usq-e1-Yok"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="changeFontSize:" destination="BYZ-38-t0r" eventType="valueChanged" id="cdx-Ei-iYl"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Excited Are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRU-eT-lAb">
+                                                        <rect key="frame" x="133" y="0.0" width="165" height="29"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -109,8 +181,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ImageControl" destination="c4D-Lc-w95" id="dQN-jZ-N9H"/>
                         <outlet property="Tittle" destination="eUA-MZ-84f" id="hKX-DY-mV3"/>
                         <outlet property="artImage" destination="iAc-qC-DFM" id="k0K-Wg-JZA"/>
+                        <outlet property="capitalSwitch" destination="Dx6-XX-nNe" id="IIj-4U-YOA"/>
+                        <outlet property="response" destination="Mvw-8I-6bh" id="pN7-j1-6GH"/>
+                        <outlet property="thisExcited" destination="RRU-eT-lAb" id="UHf-Tg-M37"/>
+                        <outlet property="updateResponse" destination="Dx6-XX-nNe" id="Ihl-8L-YNr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
