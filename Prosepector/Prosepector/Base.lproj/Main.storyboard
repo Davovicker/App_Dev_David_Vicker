@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Prosepector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAz-rR-Dq4">
+                                <rect key="frame" x="20" y="87" width="178" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Search For Gold"/>
+                                <connections>
+                                    <action selector="searchForGold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ht-Sw-ran"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5QZ-jO-OgX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bR-DP-KMC">
+                                <rect key="frame" x="236" y="87" width="178" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go To Town"/>
+                                <connections>
+                                    <action selector="goToTown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5sO-13-Epx"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tSA-iu-kZ6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cQ-fH-NDi">
+                                <rect key="frame" x="20" y="121" width="178" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Rest up"/>
+                                <connections>
+                                    <action selector="restUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YK6-pk-BZP"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAd-tA-Afg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E96-QV-HhQ">
+                                <rect key="frame" x="20" y="164" width="178" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go Home"/>
+                                <connections>
+                                    <action selector="goHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uwo-dc-vOl"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xfm-vt-sdR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgj-D9-3mP">
+                                <rect key="frame" x="20" y="250" width="178" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Wake Up At Home"/>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ME-qj-Lf3"/>
+                                    <action selector="wakeUpAtHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jkK-cb-szM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cr5-uq-oNC">
+                                <rect key="frame" x="20" y="293" width="178" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go Play Poker"/>
+                                <connections>
+                                    <action selector="goPlayPoker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TYp-5l-ap1"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p64-xI-gMy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mc-aq-4gU">
+                                <rect key="frame" x="216" y="293" width="178" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Search For Gold"/>
+                                <connections>
+                                    <action selector="searchForGoldAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKJ-Ca-UR3"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x6U-se-kNq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o45-P8-L1n">
+                                <rect key="frame" x="25" y="336" width="178" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Explore the Cave"/>
+                                <connections>
+                                    <action selector="exploreTheCave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZ5-7X-X7d"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8mQ-Qx-Z60"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hy3-D8-FVp">
+                                <rect key="frame" x="25" y="379" width="178" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bring Revolver"/>
+                                <connections>
+                                    <action selector="bringRevolver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q3k-iG-gqm"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQ5-eB-6rh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7U-Ms-WhI">
+                                <rect key="frame" x="216" y="379" width="178" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Don't Bring Revolver"/>
+                                <connections>
+                                    <action selector="dontBringRevolver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7JI-MR-90d"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CS0-aS-rRf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M94-z2-faJ">
+                                <rect key="frame" x="20" y="422" width="178" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Rush To Claim Gold"/>
+                                <connections>
+                                    <action selector="rushToClaimGold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ses-tS-UoS"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3iP-cj-QTs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOf-LX-2uX">
+                                <rect key="frame" x="25" y="465" width="178" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Shoot To Kill"/>
+                                <connections>
+                                    <action selector="shootToKill:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8py-Uf-GoY"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uz4-X3-RcP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb9-AN-F4M">
+                                <rect key="frame" x="20" y="508" width="178" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Offer Money"/>
+                                <connections>
+                                    <action selector="offerMoney:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BT6-1r-ec7"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gtl-zg-7g6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrr-d4-CDt">
+                                <rect key="frame" x="211" y="336" width="178" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Explore the Crack"/>
+                                <connections>
+                                    <action selector="exploreTheCrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e01-n0-Nbv"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="esG-ht-dB7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Yu-Wp-OjN">
+                                <rect key="frame" x="236" y="164" width="178" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go To The Bar"/>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n04-cY-iwW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wU9-aS-vLk">
+                                <rect key="frame" x="25" y="207" width="129" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go To The Saloon"/>
+                                <connections>
+                                    <action selector="goToTheSaloon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gCb-Nk-50L"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w7u-wD-SHb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIm-8X-BfZ">
+                                <rect key="frame" x="162" y="207" width="127" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Find The Source"/>
+                                <connections>
+                                    <action selector="findTheSource:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qf0-dk-0bS"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mBP-PU-mCy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJT-py-o92">
+                                <rect key="frame" x="287" y="207" width="127" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="To The River"/>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MFM-8F-JGh"/>
+                                    <action selector="toTheRiver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U62-hT-RX9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUr-wk-ly6">
+                                <rect key="frame" x="20" y="551" width="178" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Find Gold"/>
+                                <connections>
+                                    <action selector="findGold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e8r-dN-dhr"/>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qyp-Sg-QSe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWH-Fx-HLw">
+                                <rect key="frame" x="309" y="44" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hide"/>
+                                <connections>
+                                    <action selector="hide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uuh-Kd-eAE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ap9-uo-eQU">
+                                <rect key="frame" x="20" y="739" width="178" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start Game"/>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ACm-zv-DSq"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="oZ5-HM-exD">
+                                <rect key="frame" x="0.0" y="82" width="414" height="668"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="bDo-lg-B6O">
+                                        <rect key="frame" x="20" y="20" width="414" height="572"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prospector" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arl-ag-QUi">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="374" id="g5D-nw-Oke"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTF-Vn-nDo">
+                                                <rect key="frame" x="0.0" y="76" width="374" height="496"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="496" id="GBZ-Op-26z"/>
+                                                    <constraint firstAttribute="width" constant="374" id="eSX-FR-nBL"/>
+                                                </constraints>
+                                                <string key="text">Welcome to the black hills 
+of Dakota Territory!! Prospectors from across America moved to Dakota Territory, when there was
+ word of gold buried deap in the mountains. Thousands have come with dreams of milking the gold out of the mountians.
+
+However, The Black Hills are not to be triffeled with. These mountians are home to bears, cougars, snakes, and bandits. No one lives a "normal" life here. Everyone is looking for their way to get rich quick. So, watch your back cuase theres no one here to look out for you.
+
+Miners, gold panners, prospectors and folks of your type Live a life that you could only dream of. Some will leave richer than ever before, and others... well their fate will not be as kind.
+
+Now its your turn! Do you think you have what it takes to escape The Black Hills? Or will you be another forgotten name lost in the lonely mountians?
+
+Only you can decide! Tomorrow you will wake up at your gold panning camp in the middle of the Black Hills. You will be faced with decisions at the end of each page. Choose wisely, every decision you make could be life or death. With the luck I see in you, 
+I think you could leave with more gold than anyone has seen in these parts!!!</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="WFd-de-Nwt"/>
+                                <constraints>
+                                    <constraint firstItem="bDo-lg-B6O" firstAttribute="bottom" secondItem="JSU-l9-Uq3" secondAttribute="bottom" id="7pn-zO-daK"/>
+                                    <constraint firstItem="bDo-lg-B6O" firstAttribute="leading" secondItem="JSU-l9-Uq3" secondAttribute="leading" constant="20" id="PdN-j7-kUa"/>
+                                    <constraint firstItem="bDo-lg-B6O" firstAttribute="trailing" secondItem="JSU-l9-Uq3" secondAttribute="trailing" id="cQd-Jr-CdE"/>
+                                    <constraint firstItem="bDo-lg-B6O" firstAttribute="width" secondItem="SAp-wH-FOd" secondAttribute="width" id="hqk-pb-qFA"/>
+                                    <constraint firstItem="bDo-lg-B6O" firstAttribute="top" secondItem="JSU-l9-Uq3" secondAttribute="top" constant="20" id="lkM-87-FN6"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="JSU-l9-Uq3"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="SAp-wH-FOd"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="bringRevolver" destination="Hy3-D8-FVp" id="BfJ-Cf-nM8"/>
+                        <outlet property="dontBringRevolver" destination="I7U-Ms-WhI" id="Fp1-fO-ODk"/>
+                        <outlet property="exploreTheCave" destination="o45-P8-L1n" id="jTY-8o-bSF"/>
+                        <outlet property="exploreTheCrack" destination="hrr-d4-CDt" id="AOX-s6-GCn"/>
+                        <outlet property="findGold" destination="SUr-wk-ly6" id="bW5-3u-jOp"/>
+                        <outlet property="findTheSource" destination="LIm-8X-BfZ" id="S5u-jJ-gON"/>
+                        <outlet property="goHome" destination="E96-QV-HhQ" id="CGx-aW-5BV"/>
+                        <outlet property="goPlayPoker" destination="Cr5-uq-oNC" id="0dg-Wx-ls4"/>
+                        <outlet property="goToTheBar" destination="7Yu-Wp-OjN" id="M35-vU-W6v"/>
+                        <outlet property="goToTheSaloon" destination="wU9-aS-vLk" id="KFO-B2-4KC"/>
+                        <outlet property="goToTown" destination="7bR-DP-KMC" id="tkb-Sk-8uO"/>
+                        <outlet property="offerMoney" destination="cb9-AN-F4M" id="A0J-sC-TGA"/>
+                        <outlet property="pageBody" destination="yTF-Vn-nDo" id="d2K-Zt-T8X"/>
+                        <outlet property="pageTitle" destination="arl-ag-QUi" id="XSf-ww-hqm"/>
+                        <outlet property="restUp" destination="1cQ-fH-NDi" id="y3a-gL-M77"/>
+                        <outlet property="rushToClaimGold" destination="M94-z2-faJ" id="ESa-SO-H0e"/>
+                        <outlet property="scrollView" destination="oZ5-HM-exD" id="QO9-BZ-9yz"/>
+                        <outlet property="searchForGold" destination="sAz-rR-Dq4" id="abM-sF-5ym"/>
+                        <outlet property="searchForGoldAgain" destination="7mc-aq-4gU" id="4Vf-p9-x2M"/>
+                        <outlet property="shootToKill" destination="rOf-LX-2uX" id="AK2-Ry-DBJ"/>
+                        <outlet property="startGame" destination="ap9-uo-eQU" id="nk1-IL-arp"/>
+                        <outlet property="toTheRiver" destination="fJT-py-o92" id="dZ1-9i-naf"/>
+                        <outlet property="wakeUpAtHome" destination="Bgj-D9-3mP" id="oce-nO-adv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="59.598214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
