@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lab_6_Real</string>
+    <string name="editTextNate">Name</string>
+    <string name="editText">Name</string>
+    <string name="button1">Rock</string>
+    <string name="button2">EDM</string>
+    <string name="Punk" />
+    <string name="button3">Punk</string>
+    <string name="button5">Rap</string>
+    <string name="questionText">Whats type of concerts do you like?</string>
+</resources>
