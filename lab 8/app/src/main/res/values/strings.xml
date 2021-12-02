@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">lab 8</string>
+    <string name="titleText">Concet Recomendation</string>
+    <string name="radioButton1">Pop</string>
+    <string name="radioButton2">Rock</string>
+    <string name="radioButton3">country</string>
+    <string name="genreText">Genre</string>
+    <string name="performersText">Performers</string>
+    <string name="checkBox1">Migos</string>
+    <string name="checkBox2">Lil Uzi</string>
+    <string name="checkBox3">Cardi B</string>
+    <string name="checkBox4">The Weekend</string>
+    <string name="checkBox5">Chris Stapleton</string>
+    <string name="checkBox6">Eric Church</string>
+    <string name="checkBox7">Charlie Crocket</string>
+    <string name="checkBox8">Zach Bryan</string>
+    <string name="checkBox9">ACDC</string>
+    <string name="checkBox10">The Beatles</string>
+    <string name="checkBox11">Prince</string>
+    <string name="checkBox12">Rolling Stones</string>
+    <string name="locationText">Venue</string>
+    <string name="button1">Create Concert</string>
+    <string name="button2">Find Concert</string>
+    <string name="messageTextView" />
+    <string name="reviewTextView" />
+
+    <string-array name="venues">
+        <item>Red Rocks</item>
+        <item>Ball Arena</item>
+        <item>Mission Ball Room</item>
+    </string-array>
+    <string name="title_activity_concert">concertActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="feedbackEditText">feedback</string>
+</resources>
